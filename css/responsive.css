@@ -1,0 +1,69 @@
+/* @media only screen and (max-width:1200px){
+    .container{
+        padding: 0 3rem;
+    }
+}
+@media only screen and (max-width:996px){
+    
+    .navigation{
+        position: fixed !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 100% !important;
+        z-index: 100 !important;
+    }
+    .nav{
+        display: block !important;
+        background-color: var(--primaryColor) !important;
+    }
+    .nav-header{
+        justify-content: space-between !important;
+        width: 100% !important;
+    }
+    .nav-menu{
+        height: 0rem !important;
+        overflow: hidden !important;
+        display: flex !important;
+        align-items: flex-start !important;
+        justify-content: start !important;
+        flex-direction: column !important;
+        transition: all 300ms ease-in-out !important;
+        z-index: 999;
+    }
+    .humbarger{
+        font-size: 1.6rem !important;
+        color: var(--white) !important;
+        display: block !important;
+        cursor: pointer !important;
+    }
+    .nav-list{
+        
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        width: 100% !important;
+        height: auto !important;
+        margin-bottom: 1.2rem !important;
+    }
+    .nav-items:not(:last-child){
+        margin-right: 0.5rem !important;
+    }
+    .nav-list .nav-items{
+        width: 100% !important;
+    }
+    .nav-list .list-link:link,
+    .nav-list .list-link:visited{
+        padding: 0 !important;
+        display: block !important;
+    }
+}
+
+@media only screen and (max-width:567px){
+    .container{
+        padding: 0 3rem;
+    }
+}
+@media only screen and (max-width:996px){
+    .container{
+        padding: 0 4rem;
+    }
+} */
