@@ -89,9 +89,12 @@
   .header {
     position: relative;
     background-color: var(--black);
-    height: calc(100vh - 2rem);
-    background: url("../assets/bg.jpg") center/cover no-repeat fixed;
+    /* height: calc(100vh - 2rem); */
+    background: url("../assets/saneem1.jpg")no-repeat;
     z-index: 1000;
+    background-size: cover;
+    height: 100%;
+  
   }
   
   .header::after {
@@ -679,6 +682,7 @@ margin: 0.5rem 0 1rem 0;
 .blog .single p{
   font-size: 1.5rem;
   margin-bottom: 2rem;
+  text-align: justify;
 }
 .blog .single a{
   font-size: 1.4rem;
@@ -704,5 +708,89 @@ margin: 0.5rem 0 1rem 0;
 .contact-center p{
   font-size: 1.4rem;
   margin-bottom: 1rem;
-  text-transform: ;
+  text-align: justify;
+}
+
+.left .bottom{
+  display: flex;
+  margin-top: 3rem;
+  align-items: center;
+}
+.left .bottom span{
+  font-size: 3rem;
+  color: var(--primaryColor);
+  margin-bottom: .8rem;
+  display: inline-block;
+}
+.left .bottom>div{
+  margin-right: auto;
+}
+.left .bottom h4{
+  font-size: 1.5rem;
+  font-weight: 600;
+
+}
+.bottom small{
+  font-size: 1.5rem;
+}
+
+.form{
+  border: 1px solid var(--yellow);
+  padding: 3rem;
+}
+.form div{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+.form input{
+  border: 1px solid var(--yellow);
+  border-radius: 0.5rem;
+  text-indent: 1rem;
+  padding: 1rem 2rem 1rem 0;
+}
+.form textarea{
+  display: block;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--yellow);
+  width: 100%;
+  margin-bottom: 2rem;
+  overflow: auto;
+  resize: vertical;
+}
+.form a{
+  display: inline-block;
+    padding: 1.3rem 3rem;
+    background-color: var(--primaryColor);
+    color: var(--white);
+}
+
+@media only screen and (max-width: 996px) {
+  .contact-center {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .contact-center .right .form div {
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+
+  .contact-center .right .form input {
+    width: 100%;
+    padding: 1rem 0;
+  }
+
+  .contact-center .right .form div > input {
+    margin-bottom: 2rem;
+  }
+}
+footer{
+  background-color: var(--primaryColor);
+  padding: 2rem;
+  color: var(--white);
+  text-align: center;
 }
